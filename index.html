@@ -149,6 +149,71 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://az0s.github.com/2021/category/Homebrew/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Azus">
+      <meta itemprop="description" content="Child & Student">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Azus">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/category/Homebrew/" class="post-title-link" itemprop="url">Homebrew</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-09-05 23:46:47 / Modified: 23:47:44" itemprop="dateCreated datePublished" datetime="2021-09-05T23:46:47+08:00">2021-09-05</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Homebrew"><a href="#Homebrew" class="headerlink" title="Homebrew"></a>Homebrew</h2><p>在安装OpenCV过程中需要不同版本的python，这个时候了解了homebrew的相关技术，觉得unix文件系统管理相当的有意思。但是没有深挖，觉得是一个很大的技术黑盒，在这里站一个坑，以后来填。</p>
+<blockquote>
+<p>首先， brew 本身是酿造、酿酒的意思，会用这个字的原因是 homebrew 的安装方式为下载 source code 回来做编译，由于是在自己电脑做 local compile 编译套件，所以这个工具叫做 homebrew 自家酿酒。<br>酿酒需要有配方 formula，当你需要安装套件时，流程就是下 brew 命令去根据配方 formula, 酿造出一桶（ keg）酒来。所以 keg 指的是整个编译完成的套件资料夹。<br>再来，放置套件的位置在 /usr/local/Cellar/， Cellar 就是地窖，一桶一桶酿好的酒当然要存放在地窖里囖！所以编译安成的套件资料夹 keg 预设目录在 /usr/local/Cellar/。<br>最后回到「keg-only」整个词，字面上意思现在就很清除，表示这个套件只会存放在桶子里，不会跑出桶子外。实际上的行为是 brew 不会帮你做 symlink 到 /usr/local，避免你的原生系统内还有一套 readline 而打架，所以提示消息说 readline 套件是 keg-only。<br>至此，希望你通过上面的解释了解 Homebrew 相关有趣的命名～</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/196667957">Homebrew来源原理</a></p>
+</blockquote>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://az0s.github.com/2021/category/OpenCV/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -304,7 +369,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-09-05 19:42:37" itemprop="dateModified" datetime="2021-09-05T19:42:37+08:00">2021-09-05</time>
+                <time title="Modified: 2021-09-05 23:46:26" itemprop="dateModified" datetime="2021-09-05T23:46:26+08:00">2021-09-05</time>
               </span>
 
           
@@ -343,7 +408,9 @@
 
 <h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>Hexo canvas-nest <a target="_blank" rel="noopener" href="https://github.com/theme-next/theme-next-canvas-nest">https://github.com/theme-next/theme-next-canvas-nest</a></p>
 <h2 id="FFMPEG"><a href="#FFMPEG" class="headerlink" title="FFMPEG"></a>FFMPEG</h2><p>-i 指定来源 </p>
-<h2 id="Homebrew"><a href="#Homebrew" class="headerlink" title="Homebrew"></a>Homebrew</h2><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/196667957">Homebrew来源原理</a></p>
+<h2 id="PIP-Picture-in-Picture-in-Youtube-Using-Safari"><a href="#PIP-Picture-in-Picture-in-Youtube-Using-Safari" class="headerlink" title="PIP(Picture in Picture) in Youtube Using Safari"></a>PIP(Picture in Picture) in Youtube Using Safari</h2><blockquote>
+<p>With the YouTube video open in Safari, right-click on the actual video. However, you won’t see the PIP option on this menu. Instead, you must right-click again elsewhere on the video to bring up a second pop-up menu, as shown above, while the first one is still visible on the screen.</p>
+</blockquote>
 
       
     </div>
@@ -568,7 +635,7 @@ javac -encoding utf-8 文件名.java
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
