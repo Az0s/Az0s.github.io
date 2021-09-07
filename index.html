@@ -149,6 +149,74 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://az0s.github.com/2021/category/Python-%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Azus">
+      <meta itemprop="description" content="Child & Student">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Azus">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/category/Python-%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">Python 语法笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-09-07 11:11:15 / Modified: 11:20:52" itemprop="dateCreated datePublished" datetime="2021-09-07T11:11:15+08:00">2021-09-07</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>Python语法与C++相差较大 遇到了还是稍微记一下</p>
+</blockquote>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/category/Python-%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://az0s.github.com/2021/category/bin/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -180,7 +248,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-09-06 08:39:02" itemprop="dateModified" datetime="2021-09-06T08:39:02+08:00">2021-09-06</time>
+                <time title="Modified: 2021-09-07 11:20:33" itemprop="dateModified" datetime="2021-09-07T11:20:33+08:00">2021-09-07</time>
               </span>
 
           
@@ -195,18 +263,16 @@
 
       
           <blockquote>
-<p>学习的时候的bin，碎碎记～</p>
+<p>学习的时候的bin，碎碎记～ 💪</p>
 </blockquote>
-<h2 id="VS-Code-launch-json参数"><a href="#VS-Code-launch-json参数" class="headerlink" title="VS Code launch.json参数"></a>VS Code launch.json参数</h2><p>request是最重要的参数，它能选择两种类型，一个是launch模式，一个是attach模式：<br>launch模式：由VS Code来启动一个独立的具有debug功能的程序。<br>attach模式：监听一个已启动的程序（其必须已经开启debug模式）。<br>大多数情况下，调试Python都是用launch模式。少数情况下，你无法通过新建独立程序来调试（如要与浏览器相结合的程序，launch模式会导致你大部分浏览器插件失效），这时候就需要attach模式。</p>
-<hr>
-<h2 id="npm镜像"><a href="#npm镜像" class="headerlink" title="npm镜像"></a>npm镜像</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">//查看源</span><br><span class="line">npm config get registry</span><br><span class="line">//更换源</span><br><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmjs.org</span><br><span class="line">//淘宝源</span><br><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br><span class="line">//淘宝npm镜像 </span><br><span class="line">https://npm.taobao.org/</span><br><span class="line"></span><br><span class="line">//采用如下命令进行操作：</span><br><span class="line"> </span><br><span class="line">npm install -g package --registry=https://registry.npm.taobao.org</span><br><span class="line"> </span><br><span class="line">//安装cnpm </span><br><span class="line"></span><br><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br><span class="line"> </span><br><span class="line">//使用cnpm进行安装，使用方法和npm相同</span><br><span class="line">cnpm install -g electron</span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>Hexo canvas-nest <a target="_blank" rel="noopener" href="https://github.com/theme-next/theme-next-canvas-nest">https://github.com/theme-next/theme-next-canvas-nest</a></p>
-<h2 id="FFMPEG"><a href="#FFMPEG" class="headerlink" title="FFMPEG"></a>FFMPEG</h2><p>-i 指定来源 </p>
-<h2 id="PIP-Picture-in-Picture-in-Youtube-Using-Safari"><a href="#PIP-Picture-in-Picture-in-Youtube-Using-Safari" class="headerlink" title="PIP(Picture in Picture) in Youtube Using Safari"></a>PIP(Picture in Picture) in Youtube Using Safari</h2><blockquote>
-<p>With the YouTube video open in Safari, right-click on the actual video. However, you won’t see the PIP option on this menu. Instead, you must right-click again elsewhere on the video to bring up a second pop-up menu, as shown above, while the first one is still visible on the screen.</p>
-</blockquote>
-<h2 id><a href="#" class="headerlink" title></a></h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/category/bin/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -256,7 +322,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-09-06 08:43:39" itemprop="dateModified" datetime="2021-09-06T08:43:39+08:00">2021-09-06</time>
+                <time title="Modified: 2021-09-07 11:19:45" itemprop="dateModified" datetime="2021-09-07T11:19:45+08:00">2021-09-07</time>
               </span>
 
           
@@ -270,16 +336,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="Homebrew"><a href="#Homebrew" class="headerlink" title="Homebrew"></a>Homebrew</h2><p>在安装OpenCV过程中需要不同版本的python，这个时候了解了homebrew的相关技术，觉得unix文件系统管理相当的有意思。但是没有深挖，觉得是一个很大的技术黑盒，在这里站一个坑，以后来填。</p>
-<blockquote>
-<p>首先， brew 本身是酿造、酿酒的意思，会用这个字的原因是 homebrew 的安装方式为下载 source code 回来做编译，由于是在自己电脑做 local compile 编译套件，所以这个工具叫做 homebrew 自家酿酒。<br>酿酒需要有配方 formula，当你需要安装套件时，流程就是下 brew 命令去根据配方 formula, 酿造出一桶（ keg）酒来。所以 keg 指的是整个编译完成的套件资料夹。<br>再来，放置套件的位置在 /usr/local/Cellar/， Cellar 就是地窖，一桶一桶酿好的酒当然要存放在地窖里囖！所以编译安成的套件资料夹 keg 预设目录在 /usr/local/Cellar/。<br>最后回到「keg-only」整个词，字面上意思现在就很清除，表示这个套件只会存放在桶子里，不会跑出桶子外。实际上的行为是 brew 不会帮你做 symlink 到 /usr/local，避免你的原生系统内还有一套 readline 而打架，所以提示消息说 readline 套件是 keg-only。<br>至此，希望你通过上面的解释了解 Homebrew 相关有趣的命名～</p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/196667957">Homebrew来源原理</a></p>
-</blockquote>
-</blockquote>
-<h3 id="Homebrew-重安装-80-121-x74-104-x6f-110-x40-x33-46-56-提示："><a href="#Homebrew-重安装-80-121-x74-104-x6f-110-x40-x33-46-56-提示：" class="headerlink" title="Homebrew 重安装&#80;&#121;&#x74;&#104;&#x6f;&#110;&#x40;&#x33;&#46;&#56;提示："></a>Homebrew 重安装<a href="mailto:&#80;&#121;&#x74;&#104;&#x6f;&#110;&#x40;&#x33;&#46;&#56;">&#80;&#121;&#x74;&#104;&#x6f;&#110;&#x40;&#x33;&#46;&#56;</a>提示：</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">You can install Python packages with</span><br><span class="line">  /opt/homebrew/opt/python@3.8/bin/pip3 install &lt;package&gt;</span><br><span class="line">They will install into the site-package directory</span><br><span class="line">  /opt/homebrew/lib/python3.8/site-packages</span><br><span class="line"></span><br><span class="line">See: https://docs.brew.sh/Homebrew-and-Python</span><br><span class="line"></span><br><span class="line">python@3.8 is keg-only, <span class="built_in">which</span> means it was not symlinked into /opt/homebrew,</span><br><span class="line">because this is an alternate version of another formula.</span><br><span class="line"></span><br><span class="line">If you need to have python@3.8 first <span class="keyword">in</span> your PATH, run:</span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&#x27;export PATH=&quot;/opt/homebrew/opt/python@3.8/bin:$PATH&quot;&#x27;</span> &gt;&gt; ~/.zshrc</span><br><span class="line"></span><br><span class="line">For compilers to find python@3.8 you may need to <span class="built_in">set</span>:</span><br><span class="line">  <span class="built_in">export</span> LDFLAGS=<span class="string">&quot;-L/opt/homebrew/opt/python@3.8/lib&quot;</span></span><br><span class="line"></span><br><span class="line">For pkg-config to find python@3.8 you may need to <span class="built_in">set</span>:</span><br><span class="line">  <span class="built_in">export</span> PKG_CONFIG_PATH=<span class="string">&quot;/opt/homebrew/opt/python@3.8/lib/pkgconfig&quot;</span></span><br></pre></td></tr></table></figure>
-<p><a href="mailto:&#x50;&#121;&#x74;&#104;&#x6f;&#x6e;&#64;&#51;&#46;&#x38;">&#x50;&#121;&#x74;&#104;&#x6f;&#x6e;&#64;&#51;&#46;&#x38;</a> found in /opt/homebrew/opt/<a href="mailto:&#x70;&#121;&#116;&#104;&#x6f;&#x6e;&#x40;&#x33;&#46;&#x38;">&#x70;&#121;&#116;&#104;&#x6f;&#x6e;&#x40;&#x33;&#46;&#x38;</a>/bin/<br><a href="mailto:&#112;&#121;&#116;&#x68;&#111;&#x6e;&#64;&#x33;&#46;&#57;">&#112;&#121;&#116;&#x68;&#111;&#x6e;&#64;&#x33;&#46;&#57;</a> found in /usr/local/bin/</p>
-
+          <h2 id="Homebrew-🍺"><a href="#Homebrew-🍺" class="headerlink" title="Homebrew 🍺"></a>Homebrew 🍺</h2><p>在安装OpenCV过程中需要不同版本的python，这个时候了解了homebrew的相关技术，觉得unix文件系统管理相当的有意思。但是没有深挖，觉得是一个很大的技术黑盒，在这里站一个坑，以后来填。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/category/Homebrew/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -329,7 +394,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-09-06 16:50:47" itemprop="dateModified" datetime="2021-09-06T16:50:47+08:00">2021-09-06</time>
+                <time title="Modified: 2021-09-07 11:16:32" itemprop="dateModified" datetime="2021-09-07T11:16:32+08:00">2021-09-07</time>
               </span>
 
           
@@ -343,19 +408,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="pycharm"><a href="#pycharm" class="headerlink" title="pycharm"></a>pycharm</h2><p><strong>venv</strong> virtual envirionment</p>
-<p>cv2.imread(“”)<br>cv2.imshow(“”, var)<br>cv2.waitkey()</p>
-<h2 id="1-获取视频和播放视频"><a href="#1-获取视频和播放视频" class="headerlink" title="1. 获取视频和播放视频"></a>1. 获取视频和播放视频</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;package imported&quot;</span>)</span><br><span class="line"></span><br><span class="line">cap = cv2.VideoCapture(<span class="number">0</span>)</span><br><span class="line"><span class="comment"># cap = cv2.VideoCapture(&quot;Resource/out.mp3&quot;)</span></span><br><span class="line">cap.<span class="built_in">set</span>(<span class="number">3</span>, <span class="number">640</span>)</span><br><span class="line">cap.<span class="built_in">set</span>(<span class="number">4</span>,<span class="number">480</span>)</span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    success, img = cap.read()</span><br><span class="line">    <span class="comment"># time.sleep(1)</span></span><br><span class="line">    cv2.imshow(<span class="string">&quot;Video&quot;</span>, img)</span><br><span class="line">    <span class="keyword">if</span> cv2.waitKey(<span class="number">1</span>) &amp; <span class="number">0xFF</span> ==<span class="built_in">ord</span>(<span class="string">&#x27;q&#x27;</span>):</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>打开视频接口 ：  <code>cv2.Videocapture()</code>创造一个<code>Videiocapture</code>变量， 参数可以是设备索引或视频文件。</li>
-<li>以帧为单位读取显示视频</li>
-</ul>
+          <p>第一次接触计算机视觉，决定在Python下使用Opencv库，学习图像处理的同时熟悉Python语法。</p>
 <blockquote>
-<p><code>Videocapture::set(propID, value) </code><br> 3-视频流中帧的宽度<br> 4-视频流中帧的高度<br> 5-帧率<br> 6-编解码器的4字符代码<br> 10-图像的亮度–仅适用于相机<br> 11-对比度–仅用于相机<br> 12-饱和度–仅用于相机</p>
+<p><a href="mailto:&#80;&#121;&#116;&#104;&#x6f;&#x6e;&#64;&#51;&#46;&#56;">&#80;&#121;&#116;&#104;&#x6f;&#x6e;&#64;&#51;&#46;&#56;</a> PyCharm with Opencv and numpy</p>
 </blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/StarZhai/p/11905818.html">OpencvProp属性</a></p>
-<h2 id="x-amp-y-in-Opencv"><a href="#x-amp-y-in-Opencv" class="headerlink" title="x &amp; y in Opencv"></a>x &amp; y in Opencv</h2><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> -----------X </span><br><span class="line"><span class="string">|</span></span><br><span class="line"><span class="string">|</span></span><br><span class="line"><span class="string">|</span></span><br><span class="line"><span class="string">|</span></span><br><span class="line"><span class="string">|</span></span><br><span class="line">V y</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;package imported&quot;</span>)</span><br><span class="line"></span><br><span class="line">cap = cv2.VideoCapture(<span class="number">0</span>)</span><br><span class="line">cap = cv2.VideoCapture(<span class="string">&quot;Resources/out.mp4&quot;</span>)</span><br><span class="line"><span class="comment"># cap.set(3, 640)</span></span><br><span class="line"><span class="comment"># cap.set(4,480)</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    success, img = cap.read()</span><br><span class="line">    <span class="comment"># time.sleep(1)</span></span><br><span class="line">    cv2.imshow(<span class="string">&quot;Video&quot;</span>, img)</span><br><span class="line">    <span class="keyword">if</span> cv2.waitKey(<span class="number">1</span>) &amp; <span class="number">0xFF</span> ==<span class="built_in">ord</span>(<span class="string">&#x27;q&#x27;</span>):</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># all the values in the matrix is &#x27;1&#x27;</span></span><br><span class="line">kernel = np.ones((<span class="number">5</span>,<span class="number">5</span>), np.uint8)</span><br><span class="line"><span class="comment"># Grayscale:</span></span><br><span class="line">img = cv2.imread(<span class="string">&quot;Resources/lena.png&quot;</span>)</span><br><span class="line"><span class="comment"># # Grayscale convert</span></span><br><span class="line">imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)</span><br><span class="line"><span class="comment"># blur  (7,7)(ksize) must be odd numbers</span></span><br><span class="line">imgBlur = cv2.GaussianBlur(imgGray, (<span class="number">19</span>, <span class="number">19</span>), <span class="number">0</span>)</span><br><span class="line"><span class="comment"># # Edge detector</span></span><br><span class="line">imgCanny = cv2.Canny(img, <span class="number">100</span>, <span class="number">100</span>)</span><br><span class="line"><span class="comment"># enlarge the thickness (src, mtx, iterations</span></span><br><span class="line">imgDialation = cv2.dilate(imgCanny, kernel, iterations=<span class="number">1</span>)</span><br><span class="line"><span class="comment"># decrease thickness</span></span><br><span class="line">imgEroded = cv2.erode(imgDialation, kernel, iterations=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># #output</span></span><br><span class="line">cv2.imshow(<span class="string">&quot;cvtColor&quot;</span>, imgGray)</span><br><span class="line">cv2.imshow(<span class="string">&quot;BlurImg&quot;</span>, imgBlur)</span><br><span class="line">cv2.imshow(<span class="string">&quot;GrayImg&quot;</span>, imgCanny)</span><br><span class="line">cv2.imshow(<span class="string">&quot;Dialation Img&quot;</span>, imgDialation)</span><br><span class="line">cv2.imshow(<span class="string">&quot;Eroded Img&quot;</span>, imgEroded)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&quot;Resources/lambo.png&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(img.shape)</span><br><span class="line"><span class="comment"># (hight, width, number for channels(BGR))</span></span><br><span class="line"><span class="comment"># resize function</span></span><br><span class="line"><span class="comment">#* note that in Opencv (width, height),</span></span><br><span class="line">imgResized = cv2.resize(img, (<span class="number">300</span>, <span class="number">300</span>))</span><br><span class="line"><span class="comment"># cropping imgs  (height, width)</span></span><br><span class="line"><span class="comment"># keep height from 0-200, width 200-500</span></span><br><span class="line"> imgCropped = img[<span class="number">0</span>:<span class="number">200</span>, <span class="number">200</span>:<span class="number">500</span>]</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&quot;lambo&quot;</span>, img)</span><br><span class="line">cv2.imshow(<span class="string">&quot;lambo but smaller&quot;</span>, imgResized)</span><br><span class="line">cv2.imshow(<span class="string">&quot;lambo but cropped&quot;</span>, imgCropped)</span><br><span class="line"></span><br><span class="line"><span class="comment"># SHAPES AND TEXTS</span></span><br><span class="line">img = np.zeros((<span class="number">512</span>,<span class="number">512</span>, <span class="number">3</span>), np.uint8)</span><br><span class="line"><span class="built_in">print</span>(img.shape)</span><br><span class="line"><span class="comment"># img[:] = 255,0,0</span></span><br><span class="line"><span class="comment"># : states the limits of the img (height, width)</span></span><br><span class="line"><span class="comment"># [:] means the whole img(the whole matrix)</span></span><br><span class="line"><span class="comment"># drawing lines note that img is a matrix and img.shape[0] represents the first factor in img.shape(the height)</span></span><br><span class="line">cv2.line(img, (<span class="number">0</span>,<span class="number">0</span>), (img.shape[<span class="number">1</span>], img.shape[<span class="number">0</span>]), (<span class="number">0</span>, <span class="number">255</span>, <span class="number">0</span>), <span class="number">3</span>)</span><br><span class="line">cv2.rectangle(img,(<span class="number">0</span>, <span class="number">0</span>), (<span class="number">250</span>, <span class="number">250</span>), (<span class="number">0</span>, <span class="number">0</span>, <span class="number">255</span>), cv2.FILLED)</span><br><span class="line"><span class="comment"># cv2.FILLED in the thickness parameter fills the</span></span><br><span class="line">cv2.circle(img, (<span class="number">400</span>, <span class="number">50</span>), <span class="number">30</span>, (<span class="number">255</span>, <span class="number">255</span>, <span class="number">0</span>), <span class="number">5</span>)</span><br><span class="line"><span class="comment"># src, Text, font, fontScale, color thickness</span></span><br><span class="line">cv2.putText(img, <span class="string">&quot;opencv&quot;</span>, (<span class="number">300</span>, <span class="number">200</span>), cv2.FONT_HERSHEY_SIMPLEX, <span class="number">1</span>, (<span class="number">0</span>, <span class="number">150</span>, <span class="number">0</span>), <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&quot;Image&quot;</span>, img)</span><br><span class="line"></span><br><span class="line"><span class="comment"># WRAP PERSPECTIVE</span></span><br><span class="line">width, height = <span class="number">250</span>, <span class="number">350</span></span><br><span class="line">img = cv2.imread(<span class="string">&quot;Resources/cards.jpg&quot;</span>)</span><br><span class="line">pts1 = np.float32([[<span class="number">111</span>, <span class="number">219</span>], [<span class="number">287</span>, <span class="number">188</span>], [<span class="number">154</span>, <span class="number">482</span>], [<span class="number">352</span>, <span class="number">440</span>]])</span><br><span class="line">pts2 = np.float32([[<span class="number">0</span>, <span class="number">0</span>], [width, <span class="number">0</span>], [<span class="number">0</span>, height], [width, height]])</span><br><span class="line"><span class="comment"># transform matrix</span></span><br><span class="line">matrix = cv2.getPerspectiveTransform(pts1, pts2)</span><br><span class="line">imgOutPut = cv2.warpPerspective(img, matrix, (width, height))</span><br><span class="line"></span><br><span class="line">cv2.imshow(<span class="string">&quot;output&quot;</span>, imgOutPut)</span><br><span class="line">cv2.imshow(<span class="string">&quot;original&quot;</span>, img)</span><br><span class="line"></span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/category/OpenCV/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -471,7 +535,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-09-05 23:50:59" itemprop="dateModified" datetime="2021-09-05T23:50:59+08:00">2021-09-05</time>
+                <time title="Modified: 2021-09-07 11:18:27" itemprop="dateModified" datetime="2021-09-07T11:18:27+08:00">2021-09-07</time>
               </span>
 
           
@@ -485,26 +549,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="C-笔记"><a href="#C-笔记" class="headerlink" title="C++笔记"></a>C++笔记</h1><p>#code</p>
-<p>Setvbuf <a target="_blank" rel="noopener" href="https://www.runoob.com/cprogramming/c-function-setvbuf.html">setbuf 定义流如何缓冲</a><br>C 库函数 – setvbuf() | 菜鸟教程</p>
-<h2 id="Homebrew-镜像"><a href="#Homebrew-镜像" class="headerlink" title="Homebrew 镜像"></a>Homebrew 镜像</h2><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/tulintao/p/11134877.html">homebrew长时间停在Updating Homebrew 这个步骤</a></p>
-<h2 id="数组指针-指针数组"><a href="#数组指针-指针数组" class="headerlink" title="数组指针/指针数组"></a>数组指针/指针数组</h2><p><img src="/images/Pointer.jpeg" alt="Pointer&amp;Array"></p>
-<h2 id="VS-Code文件代词"><a href="#VS-Code文件代词" class="headerlink" title="VS Code文件代词"></a>VS Code文件代词</h2><hr>
-<h2 id="cpp笔记"><a href="#cpp笔记" class="headerlink" title="cpp笔记"></a>cpp笔记</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//流插入运算符: </span></span><br><span class="line">cout &lt;&lt; var  </span><br><span class="line"><span class="comment">//流提取运算符:</span></span><br><span class="line">var &gt;&gt; cin</span><br></pre></td></tr></table></figure>
-<p>继承 基类派生类<br>多态- 重载函数 虚函数</p>
-<hr>
-<h2 id="作用域限定符"><a href="#作用域限定符" class="headerlink" title="::  作用域限定符"></a><strong>::</strong>  作用域限定符</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">clock</span>&#123;</span></span><br><span class="line">	<span class="keyword">public</span>:</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">clock::func</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="拷贝构造函数"><a href="#拷贝构造函数" class="headerlink" title="拷贝构造函数"></a>拷贝构造函数</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">clock <span class="title">c</span><span class="params">(var1, var2, var3)</span></span>;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="KSWeb-安卓上的Web服务器"><a href="#KSWeb-安卓上的Web服务器" class="headerlink" title="KSWeb: 安卓上的Web服务器"></a>KSWeb: 安卓上的Web服务器</h2><hr>
-<h2 id="git使用"><a href="#git使用" class="headerlink" title="git使用"></a>git使用</h2><div class="selfadapting-video">
-<iframe src="https://www.youtube.com/watch?v=USjZcfj8yxE&t=272s" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-</div>
-
-
+          <h1 id="C-笔记"><a href="#C-笔记" class="headerlink" title="C++笔记"></a>C++笔记</h1><p>从C到C++的笔记，主要是面向对象方面的内容。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/category/CPP-Notes/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -546,10 +599,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2021-09-04 10:48:51 / Modified: 19:05:23" itemprop="dateCreated datePublished" datetime="2021-09-04T10:48:51+08:00">2021-09-04</time>
+              <time title="Created: 2021-09-04 10:48:51" itemprop="dateCreated datePublished" datetime="2021-09-04T10:48:51+08:00">2021-09-04</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-09-07 11:24:08" itemprop="dateModified" datetime="2021-09-07T11:24:08+08:00">2021-09-07</time>
+              </span>
 
           
 
@@ -562,19 +621,22 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="MISAMISA的JAVA学习笔记"><a href="#MISAMISA的JAVA学习笔记" class="headerlink" title="MISAMISA的JAVA学习笔记"></a>MISAMISA的JAVA学习笔记</h1><blockquote>
-<p>QwQ</p>
+          <!--
+ * @LastEditors: MISAMISA
+ * @LastEditTime: 2021-09-07 11:22:15
+ * @FilePath: \java\java\java.md
+-->
+<h1 id="MISAMISAのjava"><a href="#MISAMISAのjava" class="headerlink" title="MISAMISAのjava"></a>MISAMISAのjava</h1><blockquote>
+<p>(((((((((((っ•ω•)っ Σ(σ｀•ω•´)σ </p>
 </blockquote>
-<h2 id="编码gbk的不可映射字符时候："><a href="#编码gbk的不可映射字符时候：" class="headerlink" title="编码gbk的不可映射字符时候："></a>编码gbk的不可映射字符时候：</h2><pre><code>当javac 文件名.java出现错误：编码gbk的不可映射字符时候：
-javac -encoding utf-8 文件名.java
-之后直接java 文件名就可运行
-</code></pre>
-<h2 id="默认数据类型"><a href="#默认数据类型" class="headerlink" title="默认数据类型"></a>默认数据类型</h2><blockquote>
-<p>Azus说跟c艹一样  </p>
-</blockquote>
-<p>java中默认数据类型是int、double<br>long a = 3l;  long声明的变量后要加l，short则不用<br>float a = 1.22f;   float声明的变量后要加f<br>字符型：  </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> a = <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line"><span class="keyword">char</span> a = <span class="string">&#x27;\&#x27;&#x27;</span>;      \将<span class="string">&#x27;转变为特殊字符型常量</span></span><br></pre></td></tr></table></figure>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/category/javaNotes/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -728,12 +790,12 @@ javac -encoding utf-8 文件名.java
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
