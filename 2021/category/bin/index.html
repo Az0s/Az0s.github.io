@@ -27,11 +27,15 @@
 <meta property="og:site_name" content="Azus">
 <meta property="og:description" content="学习的时候的bin，碎碎记～ 💪">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://az0s.github.com/images/Vector.Scaler.PNG">
+<meta property="og:image" content="http://az0s.github.com/images/Vector.Transformation.PNG">
+<meta property="og:image" content="http://az0s.github.com/images/_2x2Matrix.PNG">
 <meta property="article:published_time" content="2021-09-05T15:49:23.000Z">
-<meta property="article:modified_time" content="2021-09-07T03:20:33.226Z">
+<meta property="article:modified_time" content="2021-09-09T08:46:06.204Z">
 <meta property="article:author" content="Azus">
 <meta property="article:tag" content="Learning">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://az0s.github.com/images/Vector.Scaler.PNG">
 
 <link rel="canonical" href="http://az0s.github.com/2021/category/bin/">
 
@@ -183,7 +187,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-09-07 11:20:33" itemprop="dateModified" datetime="2021-09-07T11:20:33+08:00">2021-09-07</time>
+                <time title="Modified: 2021-09-09 16:46:06" itemprop="dateModified" datetime="2021-09-09T16:46:06+08:00">2021-09-09</time>
               </span>
 
           
@@ -211,6 +215,66 @@
 <p>With the YouTube video open in Safari, right-click on the actual video. However, you won’t see the PIP option on this menu. Instead, you must right-click again elsewhere on the video to bring up a second pop-up menu, as shown above, while the first one is still visible on the screen.</p>
 </blockquote>
 <h2 id="Hexo显示部分文章"><a href="#Hexo显示部分文章" class="headerlink" title="Hexo显示部分文章"></a>Hexo显示部分文章</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--more--&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Monokai-Pro-Licenses"><a href="#Monokai-Pro-Licenses" class="headerlink" title="Monokai-Pro Licenses"></a>Monokai-Pro Licenses</h2><ol>
+<li>进入<code>~/.vscode/extensions/monokai.theme-monokai-pro-vscode-1.1.18/js</code>， 找到app.js</li>
+<li>搜索 <code>APP.UUID</code>, 注释以下代码<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">key: <span class="string">&quot;isValidLicense&quot;</span>,</span><br><span class="line">    <span class="attr">value</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> e = <span class="built_in">arguments</span>.length &gt; <span class="number">0</span> &amp;&amp; <span class="keyword">void</span> <span class="number">0</span> !== <span class="built_in">arguments</span>[<span class="number">0</span>] ? <span class="built_in">arguments</span>[<span class="number">0</span>] : <span class="string">&quot;&quot;</span>,</span><br><span class="line">            t = <span class="built_in">arguments</span>.length &gt; <span class="number">1</span> &amp;&amp; <span class="keyword">void</span> <span class="number">0</span> !== <span class="built_in">arguments</span>[<span class="number">1</span>] ? <span class="built_in">arguments</span>[<span class="number">1</span>] : <span class="string">&quot;&quot;</span>;</span><br><span class="line">        <span class="comment">//if (!e || !t) return !1; 注释掉原来的代码</span></span><br><span class="line">        <span class="keyword">if</span> (!e || !t) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">var</span> o = s()(<span class="string">&quot;&quot;</span>.concat(i.APP.UUID).concat(e)),</span><br><span class="line">            r = o.match(<span class="regexp">/.&#123;1,5&#125;/g</span>),</span><br><span class="line">            n = r.slice(<span class="number">0</span>, <span class="number">5</span>).join(<span class="string">&quot;-&quot;</span>);</span><br><span class="line">        <span class="comment">//return t === n  注释掉原来的代码</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="Visual-Studio-Code"><a href="#Visual-Studio-Code" class="headerlink" title="Visual Studio Code"></a>Visual Studio Code</h2><p>左侧状态栏(Activity Bar), 下方状态栏(Status Bar)</p>
+<h1 id="Essence-of-Linear-Algbra"><a href="#Essence-of-Linear-Algbra" class="headerlink" title="Essence of Linear Algbra"></a>Essence of Linear Algbra</h1><h2 id="Linear-Combinations-Span-and"><a href="#Linear-Combinations-Span-and" class="headerlink" title="Linear Combinations, Span, and"></a>Linear Combinations, Span, and</h2><ol>
+<li>Every Vectior is represented vertically(vector coordinates).</li>
+</ol>
+<ol>
+<li>Think of everyt coordinates as a ‘scaler’ (of the unit vector in either x axis or y axis)</li>
+</ol>
+<p><img src="/images/Vector.Scaler.PNG" alt="Scaler"></p>
+<ol>
+<li><font color="citrus">i</font> and <font color="pink">j</font> are the <strong>basis vectors</strong> of the x&amp;y coordinate system.</li>
+</ol>
+<ul>
+<li>What if we choose differnt basis vectors?</li>
+<li>a <strong>i</strong> +b <strong>j</strong> is considered the Linear combination of <strong>i</strong> and <strong>j</strong></li>
+</ul>
+<ol start="2">
+<li>The “span” of <strong>i</strong> and <strong>j</strong> is the set of all their <em>linear combinations</em>. (<em>张成的空间</em>）</li>
+</ol>
+<blockquote>
+<p>When thinking about a single vector, think it as arrow.<br>while it is a set of vectors, points.</p>
+</blockquote>
+<ol start="3">
+<li>If there’s already two vectors while adding the third one dose not change the span of the two (the third vector is redundant), then we can say that they are “Linear dependent”<blockquote>
+<p>One of the vector is already in the span of the others’.</p>
+</blockquote>
+</li>
+<li>This conducts the concept of Linear independent.</li>
+<li><strong>Basis of space</strong>: a set of linear independent vectors that span the full space.</li>
+</ol>
+<h2 id="Linear-Transformation-and-relations-to-Matrices"><a href="#Linear-Transformation-and-relations-to-Matrices" class="headerlink" title="Linear Transformation and(relations to) Matrices"></a>Linear Transformation and(relations to) Matrices</h2><blockquote>
+<p>Transformation ~= Function.</p>
+</blockquote>
+<blockquote>
+<p>Using the word “Transformation imlies you to concider ‘functions of vectors’ as ‘movement’. (Think as the input vector move over to its corresponding output vector would be intuitive.</p>
+</blockquote>
+<h2 id="Linear-Transformation"><a href="#Linear-Transformation" class="headerlink" title="Linear Transformation"></a>Linear Transformation</h2><ol>
+<li>Definition</li>
+</ol>
+<p> Any types of functions can be applied to any vectors(or the whole vector space). While some Transformations <strong>can</strong> be complicated, some, as Linear Algbra limits itselves in, are easier to understand and is called <strong>“Linear Transformations”</strong>.</p>
+<blockquote>
+<p>Linear Transformations:  </p>
+<ol>
+<li>Lines remain lines in the vector space.</li>
+<li>Origin remain fixed. </li>
+</ol>
+</blockquote>
+<ol start="2">
+<li>Where’s the vector after the Tranfromation?</li>
+</ol>
+<p><img src="/images/Vector.Transformation.PNG" alt="Tranformation"><br>    <strong>v</strong> = -1<strong>i</strong> + 2<strong>j</strong><br>    <em>Transformed</em> <strong>v</strong> = -1 <em>(Transformed)</em> <strong>i</strong> + 2 <em>(Transformed)</em> <strong>j</strong>  </p>
+<p>Any vector is represented by a linear combination of multiple vectors( or basis of space).<br>Consequently just track where the basis vectors had gone we can deduce any transformed vectors of the linear combination.</p>
+<blockquote>
+<p>e.g.: any 2d Linear Transformation can be described by two numbers. (in a 2x2 Matrix.<br><img src="/images/_2x2Matrix.PNG" alt="&quot;2x2 Matrix&quot;"></p>
+</blockquote>
+
     </div>
 
     
@@ -293,7 +357,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#VS-Code-launch-json%E5%8F%82%E6%95%B0"><span class="nav-number">1.</span> <span class="nav-text">VS Code launch.json参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#npm%E9%95%9C%E5%83%8F"><span class="nav-number">2.</span> <span class="nav-text">npm镜像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo"><span class="nav-number">3.</span> <span class="nav-text">Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FFMPEG"><span class="nav-number">4.</span> <span class="nav-text">FFMPEG</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PIP-Picture-in-Picture-in-Youtube-Using-Safari"><span class="nav-number">5.</span> <span class="nav-text">PIP(Picture in Picture) in Youtube Using Safari</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%96%87%E7%AB%A0"><span class="nav-number">6.</span> <span class="nav-text">Hexo显示部分文章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#VS-Code-launch-json%E5%8F%82%E6%95%B0"><span class="nav-number">1.</span> <span class="nav-text">VS Code launch.json参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#npm%E9%95%9C%E5%83%8F"><span class="nav-number">2.</span> <span class="nav-text">npm镜像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo"><span class="nav-number">3.</span> <span class="nav-text">Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FFMPEG"><span class="nav-number">4.</span> <span class="nav-text">FFMPEG</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PIP-Picture-in-Picture-in-Youtube-Using-Safari"><span class="nav-number">5.</span> <span class="nav-text">PIP(Picture in Picture) in Youtube Using Safari</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%96%87%E7%AB%A0"><span class="nav-number">6.</span> <span class="nav-text">Hexo显示部分文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Monokai-Pro-Licenses"><span class="nav-number">7.</span> <span class="nav-text">Monokai-Pro Licenses</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Visual-Studio-Code"><span class="nav-number">8.</span> <span class="nav-text">Visual Studio Code</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Essence-of-Linear-Algbra"><span class="nav-number"></span> <span class="nav-text">Essence of Linear Algbra</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Linear-Combinations-Span-and"><span class="nav-number">1.</span> <span class="nav-text">Linear Combinations, Span, and</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linear-Transformation-and-relations-to-Matrices"><span class="nav-number">2.</span> <span class="nav-text">Linear Transformation and(relations to) Matrices</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linear-Transformation"><span class="nav-number">3.</span> <span class="nav-text">Linear Transformation</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
