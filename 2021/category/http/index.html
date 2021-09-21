@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"az0s.github.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="大二上 数字逻辑与信号系统">
+  <meta name="description" content="阅读 《图解HTML》笔记。使用request&#x2F;bs4进行爬虫等项目时遇到的http协议相关问题，做一个记录。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数字逻辑">
-<meta property="og:url" content="http://az0s.github.com/2021/category/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91/index.html">
+<meta property="og:title" content="HTTP解析">
+<meta property="og:url" content="http://az0s.github.com/2021/category/http/index.html">
 <meta property="og:site_name" content="Azus">
-<meta property="og:description" content="大二上 数字逻辑与信号系统">
+<meta property="og:description" content="阅读 《图解HTML》笔记。使用request&#x2F;bs4进行爬虫等项目时遇到的http协议相关问题，做一个记录。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-09-13T04:17:31.000Z">
-<meta property="article:modified_time" content="2021-09-15T09:38:05.307Z">
+<meta property="article:published_time" content="2021-09-19T02:48:51.000Z">
+<meta property="article:modified_time" content="2021-09-20T13:51:51.336Z">
 <meta property="article:author" content="Azus">
-<meta property="article:tag" content="Learning">
+<meta property="article:tag" content="learning">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://az0s.github.com/2021/category/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91/">
+<link rel="canonical" href="http://az0s.github.com/2021/category/http/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>数字逻辑 | Azus</title>
+  <title>HTTP解析 | Azus</title>
   
 
 
@@ -153,7 +153,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://az0s.github.com/2021/category/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91/">
+    <link itemprop="mainEntityOfPage" href="http://az0s.github.com/2021/category/http/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpeg">
@@ -166,7 +166,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          数字逻辑
+          HTTP解析
         </h1>
 
         <div class="post-meta">
@@ -176,14 +176,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-09-13 12:17:31" itemprop="dateCreated datePublished" datetime="2021-09-13T12:17:31+08:00">2021-09-13</time>
+              <time title="Created: 2021-09-19 10:48:51" itemprop="dateCreated datePublished" datetime="2021-09-19T10:48:51+08:00">2021-09-19</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-09-15 17:38:05" itemprop="dateModified" datetime="2021-09-15T17:38:05+08:00">2021-09-15</time>
+                <time title="Modified: 2021-09-20 21:51:51" itemprop="dateModified" datetime="2021-09-20T21:51:51+08:00">2021-09-20</time>
               </span>
 
           
@@ -197,21 +197,48 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <!--
- * @Date: 2021-09-13 09:56:01
- * @LastEditors: Azus
- * @LastEditTime: 2021-09-13 09:57:25
- * @FilePath: /bupt-gym-reserve/Users/azus/Documents/Code/web/blog/source/_posts/数字逻辑.md
--->
-<blockquote>
-<p>大二上 数字逻辑与信号系统</p>
+        <blockquote>
+<p>阅读 <em>《图解HTML》</em>笔记。<br><del>使用request/bs4进行爬虫等项目时遇到的http协议相关问题，做一个记录。</del></p>
 </blockquote>
 <span id="more"></span>
-<ul>
-<li>连续量</li>
-<li>离散量（数字量）<h2 id="开关量"><a href="#开关量" class="headerlink" title="开关量"></a>开关量</h2>0和1 bit</li>
-</ul>
-<h2 id="数字波形"><a href="#数字波形" class="headerlink" title="数字波形"></a>数字波形</h2><p>高电平(H)   1<br>低电平(L)   0</p>
+
+
+<h2 id="TCP-IP"><a href="#TCP-IP" class="headerlink" title="TCP/IP"></a>TCP/IP</h2><blockquote>
+<p>The Internet protocol suite, commonly known as TCP/IP, is the set of communications protocols used in the Internet and similar computer networks. The current foundational protocols in the suite are the Transmission Control Protocol (TCP) and the Internet Protocol (IP).</p>
+</blockquote>
+<p>通常网络建立在TCP/IP协议族上。HTTP属于内部子集</p>
+<blockquote>
+<p>协议：不同硬件操作系统之间通信的规则</p>
+</blockquote>
+<h3 id="TCP-IP层级："><a href="#TCP-IP层级：" class="headerlink" title="TCP/IP层级："></a>TCP/IP层级：</h3><p>TCP/IP协议族层次化为四级：</p>
+<blockquote>
+<ol>
+<li>应用层：e.g.: FTP, DNS, HTTP</li>
+<li>传输层: e.g.:  TCP(Transimission Control Protocal), UDP(User Data Protocal)</li>
+<li>网络层:</li>
+<li>链路层（网络接口层）所有硬件范畴</li>
+</ol>
+</blockquote>
+<p>在层级中传输数据时，每经过一层会被打上一个首部信息。（接收端没过一层消去）<br>这种把数据包装起来的做法称为封装（encapsulate)</p>
+<h3 id="与HTTP密切相关的协议"><a href="#与HTTP密切相关的协议" class="headerlink" title="与HTTP密切相关的协议"></a>与HTTP密切相关的协议</h3><h4 id="负责传输IP-Internet-Protocal"><a href="#负责传输IP-Internet-Protocal" class="headerlink" title="负责传输IP(Internet Protocal)"></a>负责传输IP(Internet Protocal)</h4><p>位于网络层。（不要与IP地址搞混，IP是协议名称）几乎所有使用网络的系统</p>
+<p>IP吧各种数据包传送给对方。IP地址和MAC（Media Access Control Address)</p>
+<p><strong>AEP协议</strong> (Address Resolution Protocal)：根据IP地址反查MAC地址</p>
+<p><strong>Routing</strong>(路由选择) </p>
+<h4 id="确保可靠性的TCP协议"><a href="#确保可靠性的TCP协议" class="headerlink" title="确保可靠性的TCP协议"></a>确保可靠性的TCP协议</h4><p>在传输层，提供可靠的字节流服务(Byte Stream Service)</p>
+<p>TCP易于传输：字节流服务(Byte Stream Service): 大型数据分割为文段(segment)为单位的数据包。</p>
+<p>TCP确保传输：三次握手：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt;Sender: flag_SYN(synchronize)</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">Receiver: flag_SYN, flag_ACK(acknowlegement)</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt;Sender: flag_ACK</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="域名解析DNS-Domain-Name-System"><a href="#域名解析DNS-Domain-Name-System" class="headerlink" title="域名解析DNS(Domain Name System)"></a>域名解析DNS(Domain Name System)</h4><p>与HTTP一样，运行在应用层。提供域名到IP之间的解析服务</p>
+<h4 id="URL-amp-URI"><a href="#URL-amp-URI" class="headerlink" title="URL &amp; URI"></a>URL &amp; URI</h4><p>URL(Uniform Resources Locator) 是URI(Uniform Resources Identifier)的子集。  总的来说，URL使用地址形式(哪个服务器上的哪个资源)指定特定资源。<br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21950864">Zhihu:URI&amp;URL</a></p>
+<blockquote>
+<p>Uniform: 以统一的格式方便处理各种资源(ftp:, http:)</p>
+</blockquote>
+<p><strong>URL格式</strong></p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="regexp">//u</span>ser:pass@www.example.jp:<span class="number">80</span><span class="regexp">/dir/i</span>ndex.htm?uid=<span class="number">1</span><span class="comment">#ch1</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;http://&#x27;</span> 协议方案名</span><br><span class="line"><span class="string">&#x27;user:pass&#x27;</span> 登陆信息(opt)</span><br><span class="line"><span class="string">&#x27;www.exm.jp&#x27;</span> 服务器地址，可以是DNS可以解析的域名或<span class="number">192.168</span>.<span class="number">1.1</span>的ipv4或[<span class="number">0</span>:<span class="number">0</span>:<span class="number">0</span>:<span class="number">0</span>:<span class="number">0</span>:<span class="number">0</span>:<span class="number">0</span>:<span class="number">1</span>]这样用方括号的ipv6</span><br><span class="line"><span class="string">&#x27;80&#x27;</span>服务器端口</span><br><span class="line"><span class="string">&#x27;/dir/index.htm&#x27;</span>带层次的文件路径</span><br><span class="line"><span class="string">&#x27;查询字符串&#x27;</span>针对路境内的资源，可以使用查询字符串传入</span><br><span class="line"><span class="string">&#x27;ch1&#x27;</span>片段标识符，可以标记出已获取资源中的字资源（进一步定位）</span><br></pre></td></tr></table></figure>
+
+
+
 
     </div>
 
@@ -221,7 +248,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Learning/" rel="tag"># Learning</a>
+              <a href="/tags/learning/" rel="tag"># learning</a>
           </div>
 
         
@@ -230,13 +257,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/category/DataStructure/" rel="prev" title="DataStructure">
-      <i class="fa fa-chevron-left"></i> DataStructure
+    <a href="/2021/category/bupt-gym-reserve/" rel="prev" title="bupt-gym-reserve">
+      <i class="fa fa-chevron-left"></i> bupt-gym-reserve
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/category/bupt-gym-reserve/" rel="next" title="bupt-gym-reserve">
-      bupt-gym-reserve <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -295,7 +319,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E5%85%B3%E9%87%8F"><span class="nav-number">1.</span> <span class="nav-text">开关量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E5%AD%97%E6%B3%A2%E5%BD%A2"><span class="nav-number">2.</span> <span class="nav-text">数字波形</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#TCP-IP"><span class="nav-number">1.</span> <span class="nav-text">TCP&#x2F;IP</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#TCP-IP%E5%B1%82%E7%BA%A7%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">TCP&#x2F;IP层级：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8EHTTP%E5%AF%86%E5%88%87%E7%9B%B8%E5%85%B3%E7%9A%84%E5%8D%8F%E8%AE%AE"><span class="nav-number">1.2.</span> <span class="nav-text">与HTTP密切相关的协议</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B4%9F%E8%B4%A3%E4%BC%A0%E8%BE%93IP-Internet-Protocal"><span class="nav-number">1.2.1.</span> <span class="nav-text">负责传输IP(Internet Protocal)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A1%AE%E4%BF%9D%E5%8F%AF%E9%9D%A0%E6%80%A7%E7%9A%84TCP%E5%8D%8F%E8%AE%AE"><span class="nav-number">1.2.2.</span> <span class="nav-text">确保可靠性的TCP协议</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90DNS-Domain-Name-System"><span class="nav-number">1.2.3.</span> <span class="nav-text">域名解析DNS(Domain Name System)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#URL-amp-URI"><span class="nav-number">1.2.4.</span> <span class="nav-text">URL &amp; URI</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -316,7 +340,7 @@
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
