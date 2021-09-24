@@ -20,27 +20,24 @@
     var CONFIG = {"hostname":"az0s.github.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="在图像处理时第一次遇到透视变换，具体实现使用到矩阵对图像进行处理。对具体数学原理比较好奇，于是重新学习线性代数，这次希望在理解本质上下功夫。Origin: 3Blue1Brown-EssenceOfLinearAlgbra">
+  <meta name="description" content="基于pytorch的深度卷积神经网络(CNNs)算法原理的初步学习第一次diveinto人工智能的黑盒里头，让我看看ML的网络里面到底装了什么~">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Essence of Linear Algbra">
-<meta property="og:url" content="http://az0s.github.com/2021/category/Essence-of-Linear-Algbra/index.html">
+<meta property="og:title" content="深度卷积神经网络算法结构原理-Pytorch-CNNs">
+<meta property="og:url" content="http://az0s.github.com/2021/category/pytorch-CNNs/index.html">
 <meta property="og:site_name" content="Azus">
-<meta property="og:description" content="在图像处理时第一次遇到透视变换，具体实现使用到矩阵对图像进行处理。对具体数学原理比较好奇，于是重新学习线性代数，这次希望在理解本质上下功夫。Origin: 3Blue1Brown-EssenceOfLinearAlgbra">
+<meta property="og:description" content="基于pytorch的深度卷积神经网络(CNNs)算法原理的初步学习第一次diveinto人工智能的黑盒里头，让我看看ML的网络里面到底装了什么~">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://az0s.github.com/images/Vector.Scaler.PNG">
-<meta property="og:image" content="http://az0s.github.com/images/Vector.Transformation.PNG">
-<meta property="og:image" content="http://az0s.github.com/images/_2x2Matrix.png">
-<meta property="og:image" content="http://az0s.github.com/images/Transformation.png">
-<meta property="og:image" content="http://az0s.github.com/images/Matrix.aftTrans.png">
-<meta property="og:image" content="http://az0s.github.com/images/Non-LinearTrans.png">
-<meta property="article:published_time" content="2021-09-09T09:06:35.000Z">
-<meta property="article:modified_time" content="2021-09-10T03:24:54.632Z">
+<meta property="og:image" content="http://az0s.github.com/images/equation_convolution.svg">
+<meta property="og:image" content="http://az0s.github.com/.com//pytorch_CNNs_filter_edgeDetector.png">
+<meta property="og:image" content="http://az0s.github.com/images/pytorch_CNNs_Pooling.png">
+<meta property="article:published_time" content="2021-09-24T02:13:30.000Z">
+<meta property="article:modified_time" content="2021-09-24T15:52:35.468Z">
 <meta property="article:author" content="Azus">
-<meta property="article:tag" content="Linear Algbra">
+<meta property="article:tag" content="Learning, ML, pytorch">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://az0s.github.com/images/Vector.Scaler.PNG">
+<meta name="twitter:image" content="http://az0s.github.com/images/equation_convolution.svg">
 
-<link rel="canonical" href="http://az0s.github.com/2021/category/Essence-of-Linear-Algbra/">
+<link rel="canonical" href="http://az0s.github.com/2021/category/pytorch-CNNs/">
 
 
 <script id="page-configurations">
@@ -53,7 +50,7 @@
   };
 </script>
 
-  <title>Essence of Linear Algbra | Azus</title>
+  <title>深度卷积神经网络算法结构原理-Pytorch-CNNs | Azus</title>
   
 
 
@@ -160,7 +157,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://az0s.github.com/2021/category/Essence-of-Linear-Algbra/">
+    <link itemprop="mainEntityOfPage" href="http://az0s.github.com/2021/category/pytorch-CNNs/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpeg">
@@ -173,7 +170,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Essence of Linear Algbra
+          深度卷积神经网络算法结构原理-Pytorch-CNNs
         </h1>
 
         <div class="post-meta">
@@ -182,16 +179,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2021-09-09 17:06:35" itemprop="dateCreated datePublished" datetime="2021-09-09T17:06:35+08:00">2021-09-09</time>
+              <time title="Created: 2021-09-24 10:13:30 / Modified: 23:52:35" itemprop="dateCreated datePublished" datetime="2021-09-24T10:13:30+08:00">2021-09-24</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-09-10 11:24:54" itemprop="dateModified" datetime="2021-09-10T11:24:54+08:00">2021-09-10</time>
-              </span>
 
           
 
@@ -205,83 +196,37 @@
 
       
         <blockquote>
-<p>在图像处理时第一次遇到透视变换，具体实现使用到矩阵对图像进行处理。对具体数学原理比较好奇，于是重新学习线性代数，这次希望在理解本质上下功夫。<br>Origin: <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=kYB8IZa5AuE">3Blue1Brown-EssenceOfLinearAlgbra</a></p>
+<p>基于pytorch的深度卷积神经网络(CNNs)算法原理的初步学习<br>第一次diveinto人工智能的黑盒里头，让我看看ML的网络里面到底装了什么~</p>
 </blockquote>
 <span id="more"></span>
-<h1 id="Essence-of-Linear-Algbra"><a href="#Essence-of-Linear-Algbra" class="headerlink" title="Essence of Linear Algbra"></a>Essence of Linear Algbra</h1><h2 id="Linear-Combinations-Span-and-Basis-Vectors"><a href="#Linear-Combinations-Span-and-Basis-Vectors" class="headerlink" title="Linear Combinations, Span, and Basis Vectors"></a>Linear Combinations, Span, and Basis Vectors</h2><ol>
-<li>Every Vectior is represented vertically(vector coordinates).</li>
-</ol>
+<h2 id="卷积-Convolution"><a href="#卷积-Convolution" class="headerlink" title="卷积(Convolution)"></a>卷积(Convolution)</h2><blockquote>
+<p>卷积的本质就是加权积分，g是f的权值函数，表示输入f各个点对输出结果的影响大小，数学定义∑f(x)g(n-x)中的n-x表示x的权值和什么相关，也可以理解为一种约束，可以写成任何关于x的函数，不是一定要写成n-x（比如可以直接写成x，即表示为每个点x独立设置一个权值，x的权值只与自身有关），各个应用领域会根据需求不同改写成不同的权值约束函数。信号领域使用n-x表示x的权值与x到n的距离相关，即输入信号的影响因子与信号的衰减时间有关；图像处理领域每个像素的权值与自身的相对位置有关，所以权值函数g写成矩阵形式，是为了表示每个位置的像素值只能与对应位置的权值相乘，这就是一种基于位置的权值约束，而不是用n-x。</p>
+</blockquote>
+<blockquote>
+<p>一个对象（吃冰淇凌）对一个系统（体重）的作用效果满足线性原理、累加原理。该对象对这个系统连续作用了一段时间后，求该系统的状态。这个时候，一个卷积就可以求出来了！</p>
+</blockquote>
+<p><img src="/images/equation_convolution.svg" alt="Convolution Equation"></p>
+<p><strong>卷积核(filter)</strong><br><img src="/.com//pytorch_CNNs_filter_edgeDetector.png" alt="filter_Edge_detect"><br>每一个filter根据卷积核内权重对数据进行评估/Transform.<br>而CNNs模型通过大量的训练不断更新weights，基于训练数据集对filters进行最优化</p>
+<blockquote>
+<p>量身定制：target, loss, gradient descent 迫使filters发生改良，帮助实现loss最小化</p>
+</blockquote>
+<p><strong>Convolution Layer</strong><br>using different filters we get a stack of filtered images(with different features extracted).</p>
+<p><strong>Padding</strong><br>避免训练后损失数据/增加边角数据使用率<br>Convolution operations type: </p>
+<ul>
+<li>Valid: Without paddling: NxN * f*f -&gt; n-f+1 x n-f+1</li>
+<li>Same: paddling </li>
+</ul>
+<h2 id="Pooling-Shrinking-the-image-stack"><a href="#Pooling-Shrinking-the-image-stack" class="headerlink" title="Pooling: Shrinking the image stack"></a>Pooling: Shrinking the image stack</h2><p>max pooling - similar pattern, but smaller.</p>
 <ol>
-<li>Think of every coordinates as a ‘scaler’ (of the unit vector in either x axis or y axis)</li>
-</ol>
-<p><img src="/images/Vector.Scaler.PNG" alt="Scaler"></p>
-<ol>
-<li><font color="green">i</font> and <font color="citrus">j</font> are the <strong>basis vectors</strong> of the x&amp;y coordinate system.</li>
+<li>window size </li>
+<li>stride </li>
+<li>walk the window in stride across the image</li>
+<li>record the maximum value.</li>
 </ol>
 <ul>
-<li>What if we choose differnt basis vectors?</li>
-<li>(a <strong>i</strong> +b <strong>j</strong>) is considered the Linear combination of <strong>i</strong> and <strong>j</strong></li>
+<li>less sensitive to loc - for it doesnt care about the exact position where the max value occurs inside the window<br><img src="/images/pytorch_CNNs_Pooling.png" alt="Pooling"></li>
 </ul>
-<ol start="2">
-<li><p>The “span” of <strong>i</strong> and <strong>j</strong> is the set of all their <em>linear combinations</em>. <em>(张成的空间)</em></p>
-<blockquote>
-<p>When thinking about a single vector, think it as arrow.<br>while it is a set of vectors, points.</p>
-</blockquote>
-</li>
-<li><p>If there’s already two vectors while adding the third one dose not change the span of the two (the third vector is redundant), then we can say that they are “Linear dependent”</p>
-<blockquote>
-<p>One of the vector is already in the span of the others’.</p>
-</blockquote>
-</li>
-<li><p>This conducts the concept of Linear independent.</p>
-</li>
-<li><p><strong>Basis of space</strong>: a set of linear independent vectors that span the full space.</p>
-</li>
-</ol>
-<h2 id="Linear-Transformation-and-relations-to-Matrices"><a href="#Linear-Transformation-and-relations-to-Matrices" class="headerlink" title="Linear Transformation and(relations to) Matrices"></a>Linear Transformation and(relations to) Matrices</h2><blockquote>
-<p>Transformation ~= Function.</p>
-</blockquote>
-<blockquote>
-<p>Using the word “Transformation imlies you to concider ‘functions of vectors’ as ‘movement’. (Think as the input vector move over to its corresponding output vector would be intuitive.</p>
-</blockquote>
-<h3 id="Linear-Transformation"><a href="#Linear-Transformation" class="headerlink" title="Linear Transformation"></a>Linear Transformation</h3><ol>
-<li>Definition</li>
-</ol>
-<p> Any types of functions can be applied to any vectors(or the whole vector space). While some Transformations <strong>can</strong> be complicated, some, as Linear Algbra limits itselves in, are easier to understand and is called <strong>“Linear Transformations”</strong>.</p>
-<blockquote>
-<p>Linear Transformations:  </p>
-<ol>
-<li>Lines remain lines in the vector space.</li>
-<li>Origin remain fixed.<br>To sum up, in linear transformation, gird lines remain <strong>parallel</strong> and <strong>evenly spaced</strong>.</li>
-<li>Where’s the vector after the Tranfromation?</li>
-</ol>
-</blockquote>
-<p><img src="/images/Vector.Transformation.PNG" alt="Tranformation"><br>    <strong>v</strong> = -1<strong>i</strong> + 2<strong>j</strong><br>    <em>Transformed</em> <strong>v</strong> = -1 <em>(Transformed)</em> <strong>i</strong> + 2 <em>(Transformed)</em> <strong>j</strong>  </p>
-<p>Any vector is represented by a linear combination of multiple vectors( or basis of space).<br>Consequently just track where the basis vectors had gone we can deduce any transformed vectors of the linear combination.</p>
-<blockquote>
-<p>e.g.: any 2d Linear Transformation can be described by two numbers. (in a 2x2 Matrix.)<br><img src="/images/_2x2Matrix.png" alt="&quot;2x2 Matrix&quot;"></p>
-</blockquote>
-<hr>
-<center><b><font size="4"> Any matrix --> certain transformation of space </font></b></center>
-
-<hr>
-<blockquote>
-<blockquote>
-<p>Linear Transformation Application in Image Processing:<br><img src="/images/Transformation.png" alt="Transformation"><br>仿射变换：  </p>
-</blockquote>
-</blockquote>
-<!-- >>![struct](/images/Matrix.aftTrans.png) -->
-<blockquote>
-<blockquote>
-<img src="/images/Matrix.aftTrans.png" width="300" height="200" alt="Linear" align="left">
-<img src="/images/Non-LinearTrans.png" width="300" height="200" alt="NonLiear">
-</blockquote>
-</blockquote>
-<!-- >>![NonLinear](/images/Non-LinearTrans.png) -->
-<blockquote>
-<blockquote>
-</blockquote>
-</blockquote>
+<h2 id="Normalization-keep-the-math-inside-the-border"><a href="#Normalization-keep-the-math-inside-the-border" class="headerlink" title="Normalization - keep the math inside the border"></a>Normalization - keep the math inside the border</h2><p>Keep the math from breaking by tweaking each of the values just a bit.<br>change everything negative -&gt; zero </p>
 
     </div>
 
@@ -291,7 +236,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Linear-Algbra/" rel="tag"># Linear Algbra</a>
+              <a href="/tags/Learning-ML-pytorch/" rel="tag"># Learning, ML, pytorch</a>
           </div>
 
         
@@ -300,13 +245,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/category/Python-%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/" rel="prev" title="Python 语法笔记">
-      <i class="fa fa-chevron-left"></i> Python 语法笔记
+    <a href="/2021/category/http/" rel="prev" title="HTTP解析">
+      <i class="fa fa-chevron-left"></i> HTTP解析
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/category/DataStructure/" rel="next" title="DataStructure">
-      DataStructure <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -365,7 +307,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Essence-of-Linear-Algbra"><span class="nav-number">1.</span> <span class="nav-text">Essence of Linear Algbra</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Linear-Combinations-Span-and-Basis-Vectors"><span class="nav-number">1.1.</span> <span class="nav-text">Linear Combinations, Span, and Basis Vectors</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linear-Transformation-and-relations-to-Matrices"><span class="nav-number">1.2.</span> <span class="nav-text">Linear Transformation and(relations to) Matrices</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linear-Transformation"><span class="nav-number">1.2.1.</span> <span class="nav-text">Linear Transformation</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%B7%E7%A7%AF-Convolution"><span class="nav-number">1.</span> <span class="nav-text">卷积(Convolution)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pooling-Shrinking-the-image-stack"><span class="nav-number">2.</span> <span class="nav-text">Pooling: Shrinking the image stack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Normalization-keep-the-math-inside-the-border"><span class="nav-number">3.</span> <span class="nav-text">Normalization - keep the math inside the border</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
