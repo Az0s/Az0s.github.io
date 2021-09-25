@@ -28,10 +28,11 @@
 <meta property="og:description" content="基于pytorch的深度卷积神经网络(CNNs)算法原理的初步学习第一次diveinto人工智能的黑盒里头，让我看看ML的网络里面到底装了什么~">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://az0s.github.com/images/equation_convolution.svg">
-<meta property="og:image" content="http://az0s.github.com/.com//pytorch_CNNs_filter_edgeDetector.png">
+<meta property="og:image" content="http://az0s.github.com/images/pytorch_CNNs_filter_edgeDetector.png">
 <meta property="og:image" content="http://az0s.github.com/images/pytorch_CNNs_Pooling.png">
+<meta property="og:image" content="http://az0s.github.com/images/pytorch_CNNs_Pooling2.png">
 <meta property="article:published_time" content="2021-09-24T02:13:30.000Z">
-<meta property="article:modified_time" content="2021-09-24T15:52:35.468Z">
+<meta property="article:modified_time" content="2021-09-24T16:22:49.093Z">
 <meta property="article:author" content="Azus">
 <meta property="article:tag" content="Learning, ML, pytorch">
 <meta name="twitter:card" content="summary">
@@ -179,10 +180,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2021-09-24 10:13:30 / Modified: 23:52:35" itemprop="dateCreated datePublished" datetime="2021-09-24T10:13:30+08:00">2021-09-24</time>
+              <time title="Created: 2021-09-24 10:13:30" itemprop="dateCreated datePublished" datetime="2021-09-24T10:13:30+08:00">2021-09-24</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-09-25 00:22:49" itemprop="dateModified" datetime="2021-09-25T00:22:49+08:00">2021-09-25</time>
+              </span>
 
           
 
@@ -206,7 +213,9 @@
 <p>一个对象（吃冰淇凌）对一个系统（体重）的作用效果满足线性原理、累加原理。该对象对这个系统连续作用了一段时间后，求该系统的状态。这个时候，一个卷积就可以求出来了！</p>
 </blockquote>
 <p><img src="/images/equation_convolution.svg" alt="Convolution Equation"></p>
-<p><strong>卷积核(filter)</strong><br><img src="/.com//pytorch_CNNs_filter_edgeDetector.png" alt="filter_Edge_detect"><br>每一个filter根据卷积核内权重对数据进行评估/Transform.<br>而CNNs模型通过大量的训练不断更新weights，基于训练数据集对filters进行最优化</p>
+<p><strong>卷积核(filter)</strong></p>
+<p><img src="/images/pytorch_CNNs_filter_edgeDetector.png" alt="filter_Edge_detect"></p>
+<p>每一个filter根据卷积核内权重对数据进行评估/Transform.<br>而CNNs模型通过大量的训练不断更新weights，基于训练数据集对filters进行最优化</p>
 <blockquote>
 <p>量身定制：target, loss, gradient descent 迫使filters发生改良，帮助实现loss最小化</p>
 </blockquote>
@@ -224,9 +233,19 @@
 <li>record the maximum value.</li>
 </ol>
 <ul>
-<li>less sensitive to loc - for it doesnt care about the exact position where the max value occurs inside the window<br><img src="/images/pytorch_CNNs_Pooling.png" alt="Pooling"></li>
+<li>less sensitive to loc - for it doesnt care about the exact position where the max value occurs inside the window<!-- ![Pooling](/images/pytorch_CNNs_Pooling.png) --></li>
 </ul>
+<img src="/images/pytorch_CNNs_Pooling.png" align="center" alt="Pooling">
+<img src="/images/pytorch_CNNs_Pooling2.png" align="center" alt="Pooling">
+
+
 <h2 id="Normalization-keep-the-math-inside-the-border"><a href="#Normalization-keep-the-math-inside-the-border" class="headerlink" title="Normalization - keep the math inside the border"></a>Normalization - keep the math inside the border</h2><p>Keep the math from breaking by tweaking each of the values just a bit.<br>change everything negative -&gt; zero </p>
+<p>** Rectified Linear Units (ReLUs)**<br>find any negative value, change it to zero.<br>ReLU layer: stack of imgs become imgs without neg val.</p>
+<h2 id="Layer-Stacking-output-gt-input"><a href="#Layer-Stacking-output-gt-input" class="headerlink" title="Layer Stacking - output -&gt; input"></a>Layer Stacking - output -&gt; input</h2><p><strong>Deep Stacking</strong><br>output -&gt; input -&gt; …<br>ConL(filter) -&gt; PoL(smaller) -&gt; …</p>
+<h2 id="Fully-connected-layer"><a href="#Fully-connected-layer" class="headerlink" title="Fully connected layer"></a>Fully connected layer</h2><p>every value gets to vote. </p>
+<blockquote>
+<p>e.g.. suppose 4096 data input  layers(suppose each and 10 output possibilities. Thus we have a </p>
+</blockquote>
 
     </div>
 
@@ -307,7 +326,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%B7%E7%A7%AF-Convolution"><span class="nav-number">1.</span> <span class="nav-text">卷积(Convolution)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pooling-Shrinking-the-image-stack"><span class="nav-number">2.</span> <span class="nav-text">Pooling: Shrinking the image stack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Normalization-keep-the-math-inside-the-border"><span class="nav-number">3.</span> <span class="nav-text">Normalization - keep the math inside the border</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%B7%E7%A7%AF-Convolution"><span class="nav-number">1.</span> <span class="nav-text">卷积(Convolution)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pooling-Shrinking-the-image-stack"><span class="nav-number">2.</span> <span class="nav-text">Pooling: Shrinking the image stack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Normalization-keep-the-math-inside-the-border"><span class="nav-number">3.</span> <span class="nav-text">Normalization - keep the math inside the border</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Layer-Stacking-output-gt-input"><span class="nav-number">4.</span> <span class="nav-text">Layer Stacking - output -&gt; input</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fully-connected-layer"><span class="nav-number">5.</span> <span class="nav-text">Fully connected layer</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
