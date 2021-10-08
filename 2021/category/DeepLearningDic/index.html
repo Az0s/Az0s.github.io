@@ -20,20 +20,27 @@
     var CONFIG = {"hostname":"az0s.github.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Homebrew 🍺在安装OpenCV过程中需要不同版本的python，这个时候了解了homebrew的相关技术，觉得unix文件系统管理相当的有意思。但是没有深挖，觉得是一个很大的技术黑盒，在这里站一个坑，以后来填。">
+  <meta name="description" content="This dictionary aims to briefly explain the most important terms from Andrew.Ng’s deeplearning.ai. It contains short explainations of the terms, accompanied by links to follow-up posts, images, and o">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Homebrew">
-<meta property="og:url" content="http://az0s.github.com/2021/category/Homebrew/index.html">
+<meta property="og:title" content="DeepLearning Dictionary">
+<meta property="og:url" content="http://az0s.github.com/2021/category/DeepLearningDic/index.html">
 <meta property="og:site_name" content="Azus">
-<meta property="og:description" content="Homebrew 🍺在安装OpenCV过程中需要不同版本的python，这个时候了解了homebrew的相关技术，觉得unix文件系统管理相当的有意思。但是没有深挖，觉得是一个很大的技术黑盒，在这里站一个坑，以后来填。">
+<meta property="og:description" content="This dictionary aims to briefly explain the most important terms from Andrew.Ng’s deeplearning.ai. It contains short explainations of the terms, accompanied by links to follow-up posts, images, and o">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-09-05T15:46:47.000Z">
-<meta property="article:modified_time" content="2021-09-07T03:19:45.029Z">
+<meta property="og:image" content="http://az0s.github.com/images/pytorch_activation_func.png">
+<meta property="og:image" content="http://az0s.github.com/images/pytorch_average_pooling.png">
+<meta property="og:image" content="http://az0s.github.com/images/pytorch_alexnet.png">
+<meta property="og:image" content="http://az0s.github.com/images/pytorch_backpropagation.gif">
+<meta property="og:image" content="http://az0s.github.com/images/pytorch_bias.png">
+<meta property="og:image" content="http://az0s.github.com/images/pytorch_dropout.png">
+<meta property="article:published_time" content="2021-09-28T11:37:08.000Z">
+<meta property="article:modified_time" content="2021-09-28T13:22:12.087Z">
 <meta property="article:author" content="Azus">
-<meta property="article:tag" content="Learning">
+<meta property="article:tag" content="Deep Learning">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://az0s.github.com/images/pytorch_activation_func.png">
 
-<link rel="canonical" href="http://az0s.github.com/2021/category/Homebrew/">
+<link rel="canonical" href="http://az0s.github.com/2021/category/DeepLearningDic/">
 
 
 <script id="page-configurations">
@@ -46,7 +53,7 @@
   };
 </script>
 
-  <title>Homebrew | Azus</title>
+  <title>DeepLearning Dictionary | Azus</title>
   
 
 
@@ -153,7 +160,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://az0s.github.com/2021/category/Homebrew/">
+    <link itemprop="mainEntityOfPage" href="http://az0s.github.com/2021/category/DeepLearningDic/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpeg">
@@ -166,7 +173,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Homebrew
+          DeepLearning Dictionary
         </h1>
 
         <div class="post-meta">
@@ -175,16 +182,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2021-09-05 23:46:47" itemprop="dateCreated datePublished" datetime="2021-09-05T23:46:47+08:00">2021-09-05</time>
+              <time title="Created: 2021-09-28 19:37:08 / Modified: 21:22:12" itemprop="dateCreated datePublished" datetime="2021-09-28T19:37:08+08:00">2021-09-28</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-09-07 11:19:45" itemprop="dateModified" datetime="2021-09-07T11:19:45+08:00">2021-09-07</time>
-              </span>
 
           
 
@@ -197,16 +198,22 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="Homebrew-🍺"><a href="#Homebrew-🍺" class="headerlink" title="Homebrew 🍺"></a>Homebrew 🍺</h2><p>在安装OpenCV过程中需要不同版本的python，这个时候了解了homebrew的相关技术，觉得unix文件系统管理相当的有意思。但是没有深挖，觉得是一个很大的技术黑盒，在这里站一个坑，以后来填。</p>
+        <blockquote>
+<p>This dictionary aims to briefly explain the most important terms from Andrew.Ng’s deeplearning.ai. It contains short explainations of the terms, accompanied by links to follow-up posts, images, and original papers. The post aims to be equally useful for Deep Learning beginners and practitioners.</p>
+</blockquote>
 <span id="more"></span>
 <blockquote>
-<p>首先， brew 本身是酿造、酿酒的意思，会用这个字的原因是 homebrew 的安装方式为下载 source code 回来做编译，由于是在自己电脑做 local compile 编译套件，所以这个工具叫做 homebrew 自家酿酒。<br>酿酒需要有配方 formula，当你需要安装套件时，流程就是下 brew 命令去根据配方 formula, 酿造出一桶（ keg）酒来。所以 keg 指的是整个编译完成的套件资料夹。<br>再来，放置套件的位置在 /usr/local/Cellar/， Cellar 就是地窖，一桶一桶酿好的酒当然要存放在地窖里囖！所以编译安成的套件资料夹 keg 预设目录在 /usr/local/Cellar/。<br>最后回到「keg-only」整个词，字面上意思现在就很清除，表示这个套件只会存放在桶子里，不会跑出桶子外。实际上的行为是 brew 不会帮你做 symlink 到 /usr/local，避免你的原生系统内还有一套 readline 而打架，所以提示消息说 readline 套件是 keg-only。<br>至此，希望你通过上面的解释了解 Homebrew 相关有趣的命名～</p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/196667957">Homebrew来源原理</a></p>
+<p><a target="_blank" rel="noopener" href="https://towardsdatascience.com/the-deep-learning-ai-dictionary-ade421df39e4">The Deep Learning(.ai) Dictionary</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/45545565">Translated Version(cn)</a></p>
 </blockquote>
-</blockquote>
-<h3 id="Homebrew-重安装-80-x79-116-x68-x6f-x6e-64-51-46-56-提示："><a href="#Homebrew-重安装-80-x79-116-x68-x6f-x6e-64-51-46-56-提示：" class="headerlink" title="Homebrew 重安装&#80;&#x79;&#116;&#x68;&#x6f;&#x6e;&#64;&#51;&#46;&#56;提示："></a>Homebrew 重安装<a href="mailto:&#80;&#x79;&#116;&#x68;&#x6f;&#x6e;&#64;&#51;&#46;&#56;">&#80;&#x79;&#116;&#x68;&#x6f;&#x6e;&#64;&#51;&#46;&#56;</a>提示：</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">You can install Python packages with</span><br><span class="line">  /opt/homebrew/opt/python@3.8/bin/pip3 install &lt;package&gt;</span><br><span class="line">They will install into the site-package directory</span><br><span class="line">  /opt/homebrew/lib/python3.8/site-packages</span><br><span class="line"></span><br><span class="line">See: https://docs.brew.sh/Homebrew-and-Python</span><br><span class="line"></span><br><span class="line">python@3.8 is keg-only, <span class="built_in">which</span> means it was not symlinked into /opt/homebrew,</span><br><span class="line">because this is an alternate version of another formula.</span><br><span class="line"></span><br><span class="line">If you need to have python@3.8 first <span class="keyword">in</span> your PATH, run:</span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&#x27;export PATH=&quot;/opt/homebrew/opt/python@3.8/bin:$PATH&quot;&#x27;</span> &gt;&gt; ~/.zshrc</span><br><span class="line"></span><br><span class="line">For compilers to find python@3.8 you may need to <span class="built_in">set</span>:</span><br><span class="line">  <span class="built_in">export</span> LDFLAGS=<span class="string">&quot;-L/opt/homebrew/opt/python@3.8/lib&quot;</span></span><br><span class="line"></span><br><span class="line">For pkg-config to find python@3.8 you may need to <span class="built_in">set</span>:</span><br><span class="line">  <span class="built_in">export</span> PKG_CONFIG_PATH=<span class="string">&quot;/opt/homebrew/opt/python@3.8/lib/pkgconfig&quot;</span></span><br></pre></td></tr></table></figure>
-<p><a href="mailto:&#x50;&#x79;&#x74;&#x68;&#111;&#110;&#x40;&#51;&#46;&#56;">&#x50;&#x79;&#x74;&#x68;&#111;&#110;&#x40;&#51;&#46;&#56;</a> found in /opt/homebrew/opt/<a href="mailto:&#112;&#x79;&#116;&#104;&#x6f;&#110;&#64;&#51;&#46;&#x38;">&#112;&#x79;&#116;&#104;&#x6f;&#110;&#64;&#51;&#46;&#x38;</a>/bin/<br><a href="mailto:&#112;&#x79;&#x74;&#x68;&#111;&#110;&#x40;&#51;&#46;&#x39;">&#112;&#x79;&#x74;&#x68;&#111;&#110;&#x40;&#51;&#46;&#x39;</a> found in /usr/local/bin/</p>
+<p><strong><a target="_blank" rel="noopener" href="https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6">Activation Function</a></strong><br>Used to create a non-linear transformation of the input. The input are multiplied by weights and added to a bias term. Popular Activation functions include ReLU, tanh, or sigmoid.<br><img src="/images/pytorch_activation_func.png" alt="Activation Function"></p>
+<p><strong><a target="_blank" rel="noopener" href="https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/">Adam Optimization</a></strong><br>Can be used instead of stochastic gradien descent optimization methods to iteratively adjust network weights. Adam is computationally efficient, works well with large data sets, and requires little hyperparameter tuning, according to the <a target="_blank" rel="noopener" href="https://arxiv.org/abs/1412.6980">inventors</a>. Adam uses an adaptive learning rate <em>a</em>, instead of a predefined and fixed learning rate. Adam is currently the default optimization algorithm in deep learning models.</p>
+<p><strong><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=8NgKbjFbwJg">Adaptive Gradient Algorithm</a></strong><br>AdaGrad is a gradient descent optimization algorithm that features an adjustable leaning rate for every parameter. AdaGrad adjusts the parameters on frequently updated parameters in smaller steps than for less frequently parameters. It thus fares well on very sparse data sets, e.g. for adapting word embeddings in Natural Language Process tasks.</p>
+<p><strong><a target="_blank" rel="noopener" href="http://ufldl.stanford.edu/tutorial/supervised/Pooling/">Average Pooling</a></strong><br>Averages the results of a convolutional operation. It is often used to shrink the size of an ipput. Average pooling was primarily used in older Convolutional Neural Networks architectures, while recent architectures favor maximum pooling.<br><img src="/images/pytorch_average_pooling.png" alt="Average Pooling"></p>
+<p><strong><a target="_blank" rel="noopener" href="http://vision.stanford.edu/teaching/cs231b_spring1415/slides/alexnet_tugce_kyunghee.pdf">AlexNet</a></strong><br>A popular CNN architecture with eight layers. Itis a more extensive network architecture than LeNet and takes longer to train. AlexNet won the 2012 ImageNet image classification challenge.<br><img src="/images/pytorch_alexnet.png" alt="AlexNet"></p>
+<p><strong><a target="_blank" rel="noopener" href="http://neuralnetworksanddeeplearning.com/chap2.html">Backpropagation</a></strong><br>The genreal framework used to adjust network weights to minimize the loss function of a neural network. The algorithm travels backward throught the network and adjusts the weights throught a form of gradient descent of each activation function.<br><img src="/images/pytorch_backpropagation.gif" alt="Backpropagation travels back throught the network and adjusts the weights."></p>
+<p><strong>Bias</strong><br>Occurs when the model does not achieve a high accuracy on the training set. It is also called underfitting. When a model has a high bias, it will generally not yield high accuracy on the test set.<br><img src="/images/pytorch_bias.png" alt="bias"></p>
+<p><strong>Cost Function</strong><br>Defines the difference between the calculated output and what it should be. Coust functions are one of the key ingredients of learning in deep neural networds, as they form the basis for parameter updates. The network compares the outcoume of its forward propagation with the ground truth and adjusts the network weights accordingly to minimize the cost function.</p>
+<p><strong>Deopout</strong><br>A regularization technique which randomly eliminates nodes and its connections in deep neural networks. Dropout reduces overfitting and enables faster training of deep neural networks. Each parameter update cycle, different nodes are dropped during training. This forces neighboring nodes to acoid relying on each other too much and figuring out the correct representation themselves. It also improves the performance of certain classification tasks.<br><img src="/images/pytorch_dropout.png" alt="dropout"></p>
 
     </div>
 
@@ -216,7 +223,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Learning/" rel="tag"># Learning</a>
+              <a href="/tags/Deep-Learning/" rel="tag"># Deep Learning</a>
           </div>
 
         
@@ -225,13 +232,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/category/OpenCV/" rel="prev" title="OpenCV">
-      <i class="fa fa-chevron-left"></i> OpenCV
+    <a href="/2021/category/pytorch-CNNs/" rel="prev" title="深度卷积神经网络算法结构原理-Pytorch-CNNs">
+      <i class="fa fa-chevron-left"></i> 深度卷积神经网络算法结构原理-Pytorch-CNNs
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/category/bin/" rel="next" title="bin">
-      bin <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -290,7 +294,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Homebrew-%F0%9F%8D%BA"><span class="nav-number">1.</span> <span class="nav-text">Homebrew 🍺</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Homebrew-%E9%87%8D%E5%AE%89%E8%A3%85-80-x79-116-x68-x6f-x6e-64-51-46-56-%E6%8F%90%E7%A4%BA%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">Homebrew 重安装Python@3.8提示：</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
