@@ -32,7 +32,7 @@
 <meta property="og:image" content="http://az0s.github.com/images/equation_convolution.svg">
 <meta property="og:image" content="http://az0s.github.com/images/pytorch_CNNs_filter_edgeDetector.png">
 <meta property="article:published_time" content="2021-09-24T02:13:30.000Z">
-<meta property="article:modified_time" content="2021-09-26T12:54:42.819Z">
+<meta property="article:modified_time" content="2021-10-14T06:22:43.223Z">
 <meta property="article:author" content="Azus">
 <meta property="article:tag" content="Learning, ML, pytorch">
 <meta name="twitter:card" content="summary">
@@ -188,7 +188,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-09-26 20:54:42" itemprop="dateModified" datetime="2021-09-26T20:54:42+08:00">2021-09-26</time>
+                <time title="Modified: 2021-10-14 14:22:43" itemprop="dateModified" datetime="2021-10-14T14:22:43+08:00">2021-10-14</time>
               </span>
 
           
@@ -206,7 +206,15 @@
 <p>基于pytorch的深度卷积神经网络(CNNs)算法原理的初步学习<br>第一次diveinto人工智能的黑盒里头，让我看看ML的网络里面到底装了什么~</p>
 </blockquote>
 <span id="more"></span>
-
+<p>神经网络的典型处理如下所示：</p>
+<ol>
+<li>定义可学习参数的网络结构（堆叠各层和层的设计）；</li>
+<li>数据集输入；</li>
+<li>对输入进行处理（由定义的网络层进行处理）,主要体现在网络的前向传播；</li>
+<li>计算loss ，由Loss层计算；</li>
+<li>反向传播求梯度；</li>
+<li>根据梯度改变参数值,最简单的实现方式（SGD）为:<br>weight = weight - learning_rate * gradient<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/u011501388/article/details/84062483">Sr</a></li>
+</ol>
 <h2 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h2><h3 id="Convolution-Layer"><a href="#Convolution-Layer" class="headerlink" title="Convolution Layer"></a>Convolution Layer</h3><p>using different filters we get a stack of filtered images(with different features extracted).</p>
 <p><strong>Padding</strong><br>避免训练后损失数据/增加边角数据使用率<br>Convolution operations type: </p>
 <ul>
